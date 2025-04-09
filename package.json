@@ -2,9 +2,20 @@
   "name": "react-node-app",
   "version": "1.0.0",
   "scripts": {
-    "start": "concurrently \" npm start --prefix server\" \" npm start --prefix client\""
+    "start": "concurrently \"npm run start --prefix server\" \"npm run start --prefix client\"",
+    "install-all": "npm install && npm install --prefix client && npm install --prefix server"
   },
   "dependencies": {
-    "concurrently": "^7.0.0"
-  }
+    "axios": "^1.8.4",
+    "concurrently": "^7.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "react-router-dom": "^7.4.1"
+  },
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
